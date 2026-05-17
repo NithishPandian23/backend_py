@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Service account keys — NEVER commit these
+*.json
+!wind_turbine_tags.json
+*service-account*
+*credentials*
+
+# Environment
+.env
+
+# IDEs
+.idea/
+.vscode/

@@ -1,0 +1,12 @@
+# Web framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+
+# Google Cloud
+google-cloud-firestore==2.19.0
+firebase-admin==6.5.0
+
+# Utilities
+python-dotenv==1.0.1
+python-multipart==0.0.12
