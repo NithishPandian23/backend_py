@@ -43,6 +43,8 @@ from firebase_auth import (
 )
 from schemas import UserProfile
 
+from users_router import router as users_router
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -67,6 +69,8 @@ app = FastAPI(
     description="Backend API for Vayona Energy wind turbine monitoring platform.",
     version="1.1.0",
 )
+
+app.include_router(users_router)
 
 # CORS — explicit because the frontend sends Authorization headers
 app.add_middleware(
