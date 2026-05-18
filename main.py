@@ -44,6 +44,8 @@ from firebase_auth import (
 from schemas import UserProfile
 
 from users_router import router as users_router
+from clients_router  import router as clients_router
+from turbines_router import router as turbines_router
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -71,6 +73,8 @@ app = FastAPI(
 )
 
 app.include_router(users_router)
+app.include_router(clients_router)
+app.include_router(turbines_router)
 
 # CORS — explicit because the frontend sends Authorization headers
 app.add_middleware(
