@@ -82,7 +82,11 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",
         "http://127.0.0.1:3000",
+        "https://wind-project-ukr9.vercel.app",
+        "https://wind-project-ukr9-kz3jw9vc4.vercel.app",
+        "https://wind-project-git-62dbf5-nithishpandiansuresh-gmailcoms-projects.vercel.app",
     ],
+    allow_origin_regex=r"https://wind-project-.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
